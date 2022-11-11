@@ -36,7 +36,7 @@ num_multiple_bond_gr = {
     'triple' : 'ιν'
 }
 
-homologous_series_en = {
+functional_group_en = {
     'alcohol' : 'ol',
     'aldehyde' : 'al',
     'ketone' : 'one',
@@ -45,11 +45,27 @@ homologous_series_en = {
     'ether' : 'ether'
 }
 
-homologous_series_gr = {
+functional_group_gr = {
     'alcohol' : 'ολη',
     'aldehyde' : 'αλη',
     'ketone' : 'ονη',
     'carboxylic acid' : 'ικο οξύ',
     'ester' : 'ικος εστέρας',
     'ether' : 'αιθέρας'
+}
+
+branch_en = {
+    1 : 'methyl',
+    2 : 'ethyl',
+    3 : 'propyl',
+    'Cl' : 'chloro',
+    'Br' : 'bromo'
+}
+
+branch_gr = {
+    1 : 'μεθυλο',
+    2 : 'αιθυλο',
+    3 : 'προπυλο',
+    'Cl' : 'χλωρο',
+    'Br' : 'βρωμο'
 }
