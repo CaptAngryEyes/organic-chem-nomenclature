@@ -24,8 +24,8 @@ class Gui():
 
         def name():
             texts, positions = get_vallues()
-            has_characteristic_member = False
-            characteristic_member_type = '[None]'
+            has_functional_group = False
+            functional_group_type = '[None]'
             has_multiple_bond = False
             multiple_bond_type = 'single'
             has_branch = False
@@ -40,26 +40,26 @@ class Gui():
 
                 try:
                     if 'OH' in value:
-                        has_characteristic_member = True
-                        characteristic_member_type = 'alcohol' # αλκοόλη
+                        has_functional_group = True
+                        functional_group_type = 'alcohol' # αλκοόλη
                     elif '═' in value and ('O' in texts[positions.index(right)] or 'O' in texts[positions.index(left)]):
-                        has_characteristic_member = True
-                        characteristic_member_type = 'aldehyde' # αλδεϋδη
+                        has_functional_group = True
+                        functional_group_type = 'aldehyde' # αλδεϋδη
                     elif '||' in value and ('O' in texts[positions.index(down)] or 'O' in texts[positions.index(up)]):
-                        has_characteristic_member = True
-                        characteristic_member_type = 'ketone' # κετόνη
+                        has_functional_group = True
+                        functional_group_type = 'ketone' # κετόνη
                     elif 'COOH' in value:
-                        has_characteristic_member = True
-                        characteristic_member_type = 'carboxylic acid' # καρβοξυλικό οξύ
+                        has_functional_group = True
+                        functional_group_type = 'carboxylic acid' # καρβοξυλικό οξύ
                     elif 'COOC' in value:
-                        has_characteristic_member = True
-                        characteristic_member_type = 'ester' # εστέρας
+                        has_functional_group = True
+                        functional_group_type = 'ester' # εστέρας
                     elif ('O' in value and ('C' in texts[positions.index(left)] and 'C' in texts[positions.index(right)])):
-                        has_characteristic_member = True
-                        characteristic_member_type = 'ether' # αιθέρας
+                        has_functional_group = True
+                        functional_group_type = 'ether' # αιθέρας
                     elif ('O' in value and ('C' in texts[positions.index(up)] and 'C' in texts[positions.index(down)])):
-                        has_characteristic_member = True
-                        characteristic_member_type = 'ether' # αιθέρας
+                        has_functional_group = True
+                        functional_group_type = 'ether' # αιθέρας
                 except:
                     pass
 
@@ -88,13 +88,7 @@ class Gui():
                     has_multiple_bond = True
                     multiple_bond_type = 'double'
                     break
-
-            # Main Carbon Chain
-
-            
-
-
-
+                     
 
         # GUI
 
